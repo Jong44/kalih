@@ -6,9 +6,9 @@
             </RouterLink>
         </div>
         <div class="link flex justify-end gap-11 text-md py-2 px-14 text-base max-lg:px-1 max-md:px-1">
-            <RouterLink to="/kursus" class="a-link">Home</RouterLink>
+            <RouterLink to="/" class="a-link">Home</RouterLink>
             <RouterLink to="/about" class="a-link">About</RouterLink>
-            <a href="#footer" class="a-link">The Brand</a>
+            <RouterLink to="/brand" class="a-link">The Brand</RouterLink>
             <a href="#footer" class="a-link">Career</a>
             <a href="#footer" class="a-link">Contacts</a>
         </div>

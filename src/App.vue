@@ -10,3 +10,11 @@ import myFooter from './views/partials/Footer.vue'
     <myFooter></myFooter>
 </template>
 
+<style scoped>
+
+    *{  
+        background-color: #f8f8f8;
+    }
+
+</style>
+
