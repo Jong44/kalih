@@ -87,7 +87,7 @@
 
     
     nav a:hover{
-        color: #e01c5c;
+        color: #b9b9b9;
     }
 
     .a-link::after{
@@ -127,7 +127,7 @@
     }
 
     a.a-link.router-link-exact-active{
-        color: #af9552;
+        color: #003213;
     }
 
     @media only screen and (max-width: 640px){

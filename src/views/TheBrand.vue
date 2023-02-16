@@ -13,7 +13,7 @@ export default {
                 itemsToShow: 1,
                 snapAlign: 'start',
             },
-            breakpoints: {
+        breakpoints: {
                 700: {
                     itemsToShow: 1,
                     snapAlign: 'center',
@@ -68,7 +68,7 @@ export default {
         <div class=" w-1/2 h-[40rem] py-20 px-10">
             <p class="text-4xl text-[#34513f] mb-10">Selayang Pandang</p>
             <p class="text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum officiis? Recusandae saepe natus quod a. Asperiores perspiciatis nemo quam est maxime ipsum fuga molestias quasi ratione soluta, quis fugit? Qui libero nihil et nesciunt animi modi vitae, ad temporibus consequatur placeat asperiores, quas, magni atque corporis accusantium voluptatibus voluptate voluptatum unde blanditiis exercitationem aliquam eos? Amet animi minima delectus ipsa vel, quos harum! Quis doloribus dolorum nam voluptatum illo, velit ut sapiente vero nulla pariatur repellendus perspiciatis reiciendis, omnis ullam fugiat non fuga? Sed, magni optio soluta, tempora nostrum ex laudantium illum exercitationem ratione asperiores, eos eligendi deserunt minima.</p>
-            <div class=" con w-[45rem] h-[10rem] flex z-10 relative p-10  text-center border-l-4 border-[#34513f] mt-10">
+            <div class=" con w-[45rem] h-[10rem] flex z-10 relative p-10  text-center border-l-4 border-[#34513f] mt-10 shadow-md">
                 <div class=" w-1/3 text-sm">
                     <p class="text-4xl mb-2 font-semibold text-[#34513f]">3452</p>
                     <p>Lorem, ipsum dolor sit amet consectetur </p>
