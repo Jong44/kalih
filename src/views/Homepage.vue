@@ -155,7 +155,7 @@
 
 <style scoped>
     html{  
-            background-color: #f8f8f8;
+        background-color: #f8f8f8;
     }
     .hero{
         background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%),url('https://firebasestorage.googleapis.com/v0/b/kalih-165ab.appspot.com/o/Asset%2013%40300x-100.jpeg?alt=media&token=99c975a1-9cff-4e90-ac6e-be7e6400e65c');
