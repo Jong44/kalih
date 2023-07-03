@@ -1,6 +1,6 @@
 <template>
     <nav id="navbar" class="navbar w-full flex px-[150px] py-[30px] max-lg:py-[20px] max-lg:px-[100px] gap-56 text-white" v-bind:class="[isSticky ? stickyClass : '']">
-        <div class=" w-28 text-center">
+        <div class=" w-28 text-center max-sm:text-sm">
             <RouterLink to="/">
                 <h5>Samasta Boga Indonesia</h5>
             </RouterLink>
@@ -9,19 +9,15 @@
             <RouterLink to="/" class="a-link">Home</RouterLink>
             <RouterLink to="/about" class="a-link">About</RouterLink>
             <RouterLink to="/brand" class="a-link">The Brand</RouterLink>
-            <a href="#footer" class="a-link">Career</a>
-            <a href="#footer" class="a-link">Contacts</a>
         </div>
         <div class="menu p-2 text-lg " @click="mobile_menu = !mobile_menu">
             <font-awesome-icon :icon="[ 'fas', 'bars' ]" />
         </div>
 
         <div v-show="mobile_menu" class="active-menu">
-            <RouterLink to="/kursus" class="a-link">Home</RouterLink>
-            <RouterLink to="/about" class="a-link">About</RouterLink>
-            <a href="#footer" class="a-link">The Brand</a>
-            <RouterLink to="/kursus" class="a-link">Career</RouterLink>
-            <RouterLink to="/about" class="a-link">Contacts</RouterLink>
+            <RouterLink to="/" class=""><p>Home</p></RouterLink>
+            <RouterLink to="/about" class=""><p>About</p></RouterLink>
+            <RouterLink to="/brand" class=""><p>The Brand</p></RouterLink>
 
         </div>
     </nav>
@@ -44,6 +40,7 @@
         },
         created () {
                 window.addEventListener('scroll', this.handleScroll)
+                this.mobile_menu = false
         },
         destroyed () {
                 window.removeEventListener('scroll', this.handleScroll);
@@ -127,27 +124,36 @@
     }
 
     a.a-link.router-link-exact-active{
-        color: #003213;
+        color: white;
     }
 
     @media only screen and (max-width: 640px){
             nav{
-                padding: 30px;
+                padding: 30px 20px;
+            }
+
+            nav.is_sticky{
+                color: black;
             }
 
             .link{
                 display: none;
+
             }
 
             .menu{
                 display: block;
             }
 
+            .active-menu{
+                color: black;
+                display: grid;
+                gap: 2px;
+            }
 
+            .active-menu .router-link-exact-active{
+                color: rgb(136, 136, 136);
 
-
-
-
-            
+            }    
         }
 </style>
