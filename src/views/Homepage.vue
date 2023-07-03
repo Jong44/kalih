@@ -15,7 +15,7 @@
                 snapAlign: 'center',
             },
             breakpoints: {
-                700: {
+                600: {
                     itemsToShow: 1,
                     snapAlign: 'center',
                 },

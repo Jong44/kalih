@@ -14,7 +14,7 @@ export default {
                 snapAlign: 'start',
             },
         breakpoints: {
-                700: {
+                600: {
                     itemsToShow: 1,
                     snapAlign: 'center',
                 },
@@ -53,9 +53,9 @@ export default {
 
 <template>
     <header id="hero">
-        <div class="hero bg-center bg-cover bg-fixed h-[700px] py-48 px-[100px] text-white">
-            <p class="text-5xl mb-10 w-1/4">Kalih Coffe Tea and Space </p>
-            <p class="text-sm w-1/2 mb-20">We create brand with purposes & clear vision specialized in create, develop & maintain reputable Brands</p>
+        <div class="hero bg-center bg-cover bg-fixed h-[700px] py-48 px-[100px] text-white max-sm:px-[50px] max-sm:py-30">
+            <p class="text-5xl mb-10 w-1/4 max-sm:w-auto max-sm:text-4xl">Kalih Coffe Tea and Space </p>
+            <p class="text-sm w-1/2 mb-20 max-sm:w-auto">We create brand with purposes & clear vision specialized in create, develop & maintain reputable Brands</p>
             <div class="flex items-center">
                 <input type="text" class=" bg-green-800 py-3 px-5 placeholder-white placeholder:text-sm" placeholder="Get to know us now...">
                 <div class=" bg-green-900 py-3 px-5 cursor-pointer ">
@@ -64,29 +64,29 @@ export default {
             </div>
         </div>
     </header>
-    <section class="flex p-20">
-        <div class=" w-1/2 h-[40rem] py-20 px-10">
+    <section class="flex p-20 max-sm:block max-sm:p-10">
+        <div class=" w-1/2 h-[40rem] py-20 px-10 max-sm:w-auto max-sm:p-0">
             <p class="text-4xl text-[#34513f] mb-10">Selayang Pandang</p>
             <p class="text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum officiis? Recusandae saepe natus quod a. Asperiores perspiciatis nemo quam est maxime ipsum fuga molestias quasi ratione soluta, quis fugit? Qui libero nihil et nesciunt animi modi vitae, ad temporibus consequatur placeat asperiores, quas, magni atque corporis accusantium voluptatibus voluptate voluptatum unde blanditiis exercitationem aliquam eos? Amet animi minima delectus ipsa vel, quos harum! Quis doloribus dolorum nam voluptatum illo, velit ut sapiente vero nulla pariatur repellendus perspiciatis reiciendis, omnis ullam fugiat non fuga? Sed, magni optio soluta, tempora nostrum ex laudantium illum exercitationem ratione asperiores, eos eligendi deserunt minima.</p>
-            <div class=" con w-[45rem] h-[10rem] flex z-10 relative p-10  text-center border-l-4 border-[#34513f] mt-10 shadow-md">
-                <div class=" w-1/3 text-sm">
-                    <p class="text-4xl mb-2 font-semibold text-[#34513f]">3452</p>
+            <div class=" con w-[45rem] h-[10rem] flex z-10 relative p-10  text-center border-l-4 border-[#34513f] mt-10 shadow-md max-sm:w-auto max-sm:text-xs max-sm:px-5">
+                <div class=" w-1/3 text-sm max-sm:text-xs">
+                    <p class="text-4xl mb-2 font-semibold text-[#34513f] max-sm:text-2xl">3452</p>
                     <p>Lorem, ipsum dolor sit amet consectetur </p>
                 </div>
-                <div class=" w-1/3 text-sm ">
-                    <p class="text-4xl mb-2 font-semibold text-[#34513f]">3452</p>
+                <div class=" w-1/3 text-sm max-sm:text-xs">
+                    <p class="text-4xl mb-2 font-semibold text-[#34513f] max-sm:text-2xl">3452</p>
                     <p>Lorem, ipsum dolor sit amet consectetur </p>
                 </div>
-                <div class=" w-1/3 text-sm">
-                    <p class="text-4xl mb-2 font-semibold text-[#34513f]">3452</p>
+                <div class=" w-1/3 text-sm max-sm:text-xs">
+                    <p class="text-4xl mb-2 font-semibold text-[#34513f] max-sm:text-2xl">3452</p>
                     <p>Lorem, ipsum dolor sit amet consectetur </p>
                 </div>
             </div>
         </div>
-        <div class="w-1/2 bg-cover bg-center z-0" v-bind:style="{ backgroundImage: 'url(' + image1 + ')' }">
+        <div class="w-1/2 bg-cover bg-center z-0 max-sm:hidden" v-bind:style="{ backgroundImage: 'url(' + image1 + ')' }">
     </div>    
     </section>
-    <section class=" px-32">
+    <section class=" px-32 max-sm:p-10">
         <p class="text-4xl mb-14 font-semibold text-[#34513f]">Meet The Founders</p>
         <carousel :settings="settings" :breakpoints="breakpoints" wrap-around="@loop" autoplay="3000" :transition="1000">
             <slide v-for="slide in 10" :key="slide">
